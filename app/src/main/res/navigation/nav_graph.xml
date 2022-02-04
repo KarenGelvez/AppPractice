@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navProductsFragment">
+
+    <fragment
+        android:id="@+id/navProductsFragment"
+        android:name="com.app.apppractice.ui.view.ui.fragments.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_productsFragment_to_cartFragment"
+            app:destination="@id/navCartFragment" />
+        <action
+            android:id="@+id/action_navProductFragment_to_productDetailFragmentDialog"
+            app:destination="@id/productDetailFragmentDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/navCartFragment"
+        android:name="com.app.apppractice.ui.view.ui.fragments.ShoppingCartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_shopping_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_favoriteFragment"
+            app:destination="@id/navFavoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navFavoriteFragment"
+        android:name="com.app.apppractice.ui.view.ui.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+    <dialog
+        android:id="@+id/productDetailFragmentDialog"
+        android:name="com.app.apppractice.ui.view.ui.fragments.ProductDetailDialogFragment"
+        android:label="ProductDetailFragmentDialog"
+        tools:layout="@layout/fragment_product_detail_dialog"/>
+</navigation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navProductsFragment"
+        android:title="Productos"
+        android:icon="@drawable/ic_list_products"/>
+    <item
+        android:id="@+id/navCartFragment"
+        android:title="Carrito"
+        android:icon="@drawable/ic_shopping_cart"/>
+    <item
+        android:id="@+id/navFavoriteFragment"
+        android:title="Favoritos"
+        android:icon="@drawable/ic_favorite"/>
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.ui.fragments.ShoppingCartFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvShoppingCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/rlBaseShoppingCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:alpha="0"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+        <Button
+            android:id="@+id/bRemoveAllShopping"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Remove all"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/independence"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"/>
+        <Button
+            android:id="@+id/bShoppingProducts"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="10dp"/>
+    </LinearLayout>
+
+</FrameLayout>
